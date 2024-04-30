@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="" method="get" name="formulario">
+                    <div>
+                        <label for="form.name" >Nombre</label>
+                        <input type="text" id="form.name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="form.lastname">Apellido</label>
+                        <input type="text" id="form.lastname" name="lastname" required>
+                    </div>
+                    <div>
+                        <label for="form.mail">Correo</label>
+                        <input type="email" id="form.mail" name="mail" required>
+                    </div>
+                    <div>
+                        <label for="form.password">Contraseña</label>
+                        <input type="password" id="form.password" name="password" required>
+                    </div>
+                    <div>
+                        <label for="form.gender">Género</label>
+                        <select id="form.gender" name="gender">
+                            <option value="male">Masculino</option>
+                            <option value="fem">Femenino</option>
+                            <option value="other">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        Edad
+                        <input type="radio" id="form.age1" name="age" checked>
+                        <label for="form.age1">18 - 30</label>       
+                        <input type="radio" id="form.age2" name="age">
+                        <label for="form.age1">30 - 50</label>       
+                        <input type="radio" id="form.age3" name="age">
+                        <label for="form.age1">Mayor a 50</label>       
+                    </div>
+                    <div>
+                        <label for="form.comment">Comentario</label>
+                        <div>
+                            <textarea name="comment" id="form.comment" cols="30" rows="10" placeholder="Escriba su comentario aquí"></textarea>
+                        </div>    
+                    </div>
+                    <div>
+                        <input type="submit" name="submit" id="form.submit">
+                        <input type="reset" name="reset" id="form.reset">
+                        <input type="button" name="cancel" id="form.cancel" value="Cancelar" onclick="location.href='../index.html'">
+                    </div>   
+            </form>
+        </section>
+    </main>
+</body>
+</html>
